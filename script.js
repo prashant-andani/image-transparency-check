@@ -16,10 +16,11 @@
 		const imgData = context.getImageData(0, 0, img.width, img.height);
 		if (isTransparent(imgData.data)) {
 			console.log("Image is transparent");
+			alert("Image is Transparent :)");
 		} else {
 			console.log("Image is not transparent");
+			alert("Image is not transparent :(");
 		}
-		console.log(imgData);
 	};
 
 	function redraw(ctx) {
